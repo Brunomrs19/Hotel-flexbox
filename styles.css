@@ -1,0 +1,296 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    font-size:100%;
+}
+ul, li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor:pointer; 
+    opacity: 0.9;
+}
+a:hover {opacity: 1;}
+
+/* HEADER */
+
+.cabecalho {
+    background-color: aliceblue;
+    width:100%;
+    position:absolute; top: 0; left: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px 50px;
+}
+
+.cabecalho img {
+    width:200px;
+}
+
+.cabecalho nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+.cabecalho li a {
+    color: #191c03;
+    margin: 0 15px;
+}
+
+.cabecalho li:first-child {
+    margin-left:0;
+}
+
+.cabecalho li:last-child {
+    margin-right:0;
+}
+
+@media (max-width:700px) {
+    .cabecalho {flex-direction: column;}
+    .cabecalho img {margin-bottom:15px;}
+}
+
+.hero {
+    background-image: url(IMGS/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.hero h3 {
+    font-size:1.6em;
+    margin-bottom:10px;
+}
+.hero .btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+@media (max-width:700px) {
+    .hero h1 {
+        font-size:2rem;    
+    }
+    .hero h3 {
+        font-size:1.2rem;
+    }
+}
+
+/* CONHEÇA O HOTEL */
+
+.conheca-hotel {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border:none;
+    padding:100px 50px;
+}
+
+.conheca-hotel h3 {
+    font-size:2rem;
+    color:#191c03;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.conheca-hotel p {
+    font-size:1.2rem;
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.conheca-hotel hr {
+    width:30%;
+    height: 2px;
+    background-color: #191c03;
+    border:none;
+    margin-bottom:10px;
+}
+
+.conheca-hotel .grid {
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.conheca-hotel .grid li {
+    height:350px;
+    padding:20px;
+    border-radius: 4px;
+    background-clip:content-box;
+    background-size:cover;
+    background-position:center;
+}
+
+.conheca-hotel .grid .small{
+    flex-basis: 40%;
+}
+.conheca-hotel .grid .large{
+    flex-basis: 60%;
+}
+
+@media (max-width:700px) {
+.conheca-hotel .grid .small, .conheca-hotel .grid .small {
+    flex-basis:100%;
+}
+}
+
+/* CARACTERISTICAS */
+
+.caracteristicas {
+    background-color: #191c03;
+    color: #fff;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    padding:30px 15px;
+}
+
+.caracteristicas h3 {
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.caracteristicas p {
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+.caracteristicas hr {
+    width:200px;
+    height: 2px;
+    background-color: #fff;
+    border:none;
+    margin-bottom: 50px;
+}
+
+.caracteristicas .grid2 {
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+
+.caracteristicas .grid2 li {
+    padding: 0 30px;
+    text-align:center;
+    flex:1;
+}
+
+.caracteristicas .grid2 li i {
+    margin-bottom:30px;
+    font-size:50px;
+    color: gold;
+}
+
+.caracteristicas li h4 {
+    margin-bottom:30px;
+    font-size:1.6rem;
+    color: gold;
+}
+
+.caracteristicas li p {
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width:850px) {
+    .caracteristicas .grid2 {
+        flex-direction: column;
+    }
+}
+
+/* newsletter */
+
+.news {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 30px 5px;
+}
+
+.news h2 {
+    font-size:2rem;
+    color:rgb(228, 202, 90);
+    margin-bottom: 35px;
+    text-align:center;
+}
+
+.news p {
+    font-size: 1.3rem;
+    color:rgb(228, 202, 90);
+    margin-bottom: 40px;
+    text-align:center;
+}
+
+.news hr {
+    width:200px;
+    height:2px;
+    background-color:rgb(228, 202, 90);
+    border:none;
+    margin-bottom: 70px;
+}
+
+.news .form input {
+    padding: 10px 0 10px 0;
+    width: 650px;
+    border:1px solid rgb(228, 202, 90);
+    border-radius:6px;
+}
+
+.news .form button {
+    padding : 10px 0 10px 0;
+    margin-left: 20px;
+    border: rgb(228, 202, 90);
+    border-radius: 6px;
+    color:#fff;
+    background-color:rgb(228, 202, 90) ;
+    cursor:pointer;
+}
+
+@media (max-width:700px) {
+    .news input {
+        flex-basis:100%;
+        margin-bottom:30px;
+    }
+}
+
+/* FOOTER */
+
+.rodape {
+    background-color: #191c03;
+    width:100%;
+    height:175px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.rodape .icons {
+    margin-bottom: 35px;
+}
+
+.rodape .icons a {
+    color:rgb(228, 202, 90);
+}
+
+.rodape p {
+    color:rgb(228, 202, 90);
+    text-align:center;
+    font-size: 1.2rem;
+}
